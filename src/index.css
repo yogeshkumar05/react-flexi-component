@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.flexi-text {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.flexi-dropdown {
+  margin-left: 10px;
+}
+.flexi-btn {
+  display: block;
+  margin-top: 20px;
+}
+.flexi-form {
+  margin-left: 30px;
+}
+.field-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}

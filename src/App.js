@@ -1,10 +1,11 @@
-# react-flexi-component
-create react components from json
+import React, { Component } from 'react';
+import './App.css';
+import Flexi from "./Flexi";
 
-
-Given a flexiconfig object, create corresponding UI for each entry
-
-const flexiConfig = {
+class App extends Component {
+    
+  render() {
+    const flexiConfig = {
       items: [
         {
           "name": "person_name",
@@ -43,3 +44,17 @@ const flexiConfig = {
         }
        ]
     };
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Welcome to Domino</h1>
+        </header>
+          <Flexi
+            config={flexiConfig}
+          />
+      </div>
+    );
+  }
+}
+
+export default App;
